@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "textlint-scripts": "^2.1.0"
+  },
+  "name": "textlint-rule-note-with-period",
+  "directories": {
+    "test": "test"
+  },
+  "author": "uraway",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "sentence-splitter": "^3.0.11",
+    "textlint-util-to-string": "^2.1.1"
+  }
+}
